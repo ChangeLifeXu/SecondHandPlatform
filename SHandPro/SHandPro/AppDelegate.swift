@@ -16,7 +16,42 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        self.initTabbar()
         return true
+    }
+    
+    func initTabbar(){
+        let mainVC = MainPageViewController()
+        let communityVC = CommunityViewController()
+        let releaseVC = ReleaseViewController()
+        let messageVC = MessageViewController()
+        let personVC = PersonalCenterViewController()
+        
+        mainVC.tabBarItem.image = UIImage(named: "")
+        communityVC.tabBarItem.image = UIImage(named: "")
+        releaseVC.tabBarItem.image = UIImage(named: "")
+        messageVC.tabBarItem.image = UIImage(named: "")
+        personVC.tabBarItem.image = UIImage(named: "")
+        
+        mainVC.tabBarItem.selectedImage = UIImage(named: "")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
+        communityVC.tabBarItem.selectedImage = UIImage(named: "")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
+        releaseVC.tabBarItem.selectedImage = UIImage(named: "")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
+        messageVC.tabBarItem.selectedImage = UIImage(named: "")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
+        personVC.tabBarItem.selectedImage = UIImage(named: "")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
+        
+        UITabBarItem.appearance().setTitleTextAttributes(NSDictionary(object: UIColor.orangeColor(),forKey: NSForegroundColorAttributeName)as?[String:AnyObject], forState: UIControlState.Selected)
+        
+        mainVC.tabBarItem.title = "首页"
+        communityVC.tabBarItem.title = "社区"
+        releaseVC.tabBarItem.title = "发布"
+        messageVC.tabBarItem.title = "消息"
+        personVC.tabBarItem.title = "个人中心"
+        
+        let tabbar = UITabBarController()
+        tabbar.viewControllers = [mainVC,communityVC,releaseVC,messageVC,personVC]
+        
+        self.window?.rootViewController = tabbar
+        self.window?.backgroundColor = UIColor.whiteColor()
     }
 
     func applicationWillResignActive(application: UIApplication) {

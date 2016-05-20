@@ -14,6 +14,11 @@
 		9C6DBF801CE88A8300D6BDA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C6DBF7E1CE88A8300D6BDA7 /* LaunchScreen.storyboard */; };
 		9C6DBF8B1CE88A8300D6BDA7 /* SHandProTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6DBF8A1CE88A8300D6BDA7 /* SHandProTests.swift */; };
 		9C6DBF961CE88A8300D6BDA7 /* SHandProUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6DBF951CE88A8300D6BDA7 /* SHandProUITests.swift */; };
+		9C6DBFA91CE88CF500D6BDA7 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6DBFA81CE88CF500D6BDA7 /* MainPageViewController.swift */; };
+		9C6DBFAB1CE88D0500D6BDA7 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6DBFAA1CE88D0500D6BDA7 /* MessageViewController.swift */; };
+		9C6DBFAD1CE8904500D6BDA7 /* PersonalCenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6DBFAC1CE8904500D6BDA7 /* PersonalCenterViewController.swift */; };
+		9C6DBFAF1CE8905800D6BDA7 /* ReleaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6DBFAE1CE8905800D6BDA7 /* ReleaseViewController.swift */; };
+		9CB370071CE9D224001AA4EC /* CommunityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB370061CE9D224001AA4EC /* CommunityViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,11 @@
 		9C6DBF911CE88A8300D6BDA7 /* SHandProUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SHandProUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C6DBF951CE88A8300D6BDA7 /* SHandProUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHandProUITests.swift; sourceTree = "<group>"; };
 		9C6DBF971CE88A8300D6BDA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C6DBFA81CE88CF500D6BDA7 /* MainPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
+		9C6DBFAA1CE88D0500D6BDA7 /* MessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
+		9C6DBFAC1CE8904500D6BDA7 /* PersonalCenterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalCenterViewController.swift; sourceTree = "<group>"; };
+		9C6DBFAE1CE8905800D6BDA7 /* ReleaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReleaseViewController.swift; sourceTree = "<group>"; };
+		9CB370061CE9D224001AA4EC /* CommunityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommunityViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +107,12 @@
 		9C6DBF741CE88A8300D6BDA7 /* SHandPro */ = {
 			isa = PBXGroup;
 			children = (
+				9CB370051CE9D203001AA4EC /* Community */,
+				9C6DBFA31CE88CD000D6BDA7 /* MainPage */,
+				9C6DBFA41CE88CD000D6BDA7 /* Message */,
+				9C6DBFA51CE88CD000D6BDA7 /* PersonalCenter */,
+				9C6DBFA61CE88CD000D6BDA7 /* Release */,
+				9C6DBFA71CE88CD000D6BDA7 /* Resource */,
 				9C6DBF751CE88A8300D6BDA7 /* AppDelegate.swift */,
 				9C6DBF771CE88A8300D6BDA7 /* ViewController.swift */,
 				9C6DBF791CE88A8300D6BDA7 /* Main.storyboard */,
@@ -123,6 +139,53 @@
 				9C6DBF971CE88A8300D6BDA7 /* Info.plist */,
 			);
 			path = SHandProUITests;
+			sourceTree = "<group>";
+		};
+		9C6DBFA31CE88CD000D6BDA7 /* MainPage */ = {
+			isa = PBXGroup;
+			children = (
+				9C6DBFA81CE88CF500D6BDA7 /* MainPageViewController.swift */,
+			);
+			path = MainPage;
+			sourceTree = "<group>";
+		};
+		9C6DBFA41CE88CD000D6BDA7 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				9C6DBFAA1CE88D0500D6BDA7 /* MessageViewController.swift */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		9C6DBFA51CE88CD000D6BDA7 /* PersonalCenter */ = {
+			isa = PBXGroup;
+			children = (
+				9C6DBFAC1CE8904500D6BDA7 /* PersonalCenterViewController.swift */,
+			);
+			path = PersonalCenter;
+			sourceTree = "<group>";
+		};
+		9C6DBFA61CE88CD000D6BDA7 /* Release */ = {
+			isa = PBXGroup;
+			children = (
+				9C6DBFAE1CE8905800D6BDA7 /* ReleaseViewController.swift */,
+			);
+			path = Release;
+			sourceTree = "<group>";
+		};
+		9C6DBFA71CE88CD000D6BDA7 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		9CB370051CE9D203001AA4EC /* Community */ = {
+			isa = PBXGroup;
+			children = (
+				9CB370061CE9D224001AA4EC /* CommunityViewController.swift */,
+			);
+			path = Community;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +320,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C6DBF781CE88A8300D6BDA7 /* ViewController.swift in Sources */,
+				9C6DBFA91CE88CF500D6BDA7 /* MainPageViewController.swift in Sources */,
+				9C6DBFAB1CE88D0500D6BDA7 /* MessageViewController.swift in Sources */,
 				9C6DBF761CE88A8300D6BDA7 /* AppDelegate.swift in Sources */,
+				9C6DBFAF1CE8905800D6BDA7 /* ReleaseViewController.swift in Sources */,
+				9C6DBFAD1CE8904500D6BDA7 /* PersonalCenterViewController.swift in Sources */,
+				9CB370071CE9D224001AA4EC /* CommunityViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,6 +550,7 @@
 				9C6DBF9C1CE88A8300D6BDA7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9C6DBF9D1CE88A8300D6BDA7 /* Build configuration list for PBXNativeTarget "SHandProTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +559,7 @@
 				9C6DBF9F1CE88A8300D6BDA7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9C6DBFA01CE88A8300D6BDA7 /* Build configuration list for PBXNativeTarget "SHandProUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +568,7 @@
 				9C6DBFA21CE88A8300D6BDA7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
